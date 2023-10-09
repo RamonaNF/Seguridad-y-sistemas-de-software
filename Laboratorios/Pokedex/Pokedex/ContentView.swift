@@ -33,9 +33,9 @@ struct ContentView_Previews: PreviewProvider {
         let pokemon2 = Pokemon(name: "charmander", url: "")
         let pokemon3 = Pokemon(name: "squirtle", url: "")
         
-        let perfil = Perfil(sprites: Sprite(front_default: "", back_default: ""))
-        let perfil2 = Perfil(sprites: Sprite(front_default: "", back_default: ""))
-        let perfil3 = Perfil(sprites: Sprite(front_default: "", back_default: ""))
+        let perfil = Perfil(sprites: Sprite(front_default: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png", back_default: ""))
+        let perfil2 = Perfil(sprites: Sprite(front_default: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png", back_default: ""))
+        let perfil3 = Perfil(sprites: Sprite(front_default: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png", back_default: ""))
 
         let pokemonBase = PokemonBase(id: 1, pokemon: pokemon, perfil: perfil)
         let pokemonBase2 = PokemonBase(id: 2, pokemon: pokemon2, perfil: perfil2)
@@ -43,6 +43,8 @@ struct ContentView_Previews: PreviewProvider {
 
         let pokemonLst : [PokemonBase] = [pokemonBase, pokemonBase2, pokemonBase3]
         
-        ContentView(pokemonList: pokemonLst)
+        Group {
+            ContentView(pokemonList: pokemonLst)
+        }
     }
 }
