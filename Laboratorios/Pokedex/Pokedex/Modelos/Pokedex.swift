@@ -7,21 +7,21 @@
 
 import Foundation
 
-struct Pokedex {
+struct Pokedex: Codable {
     var count: Int
     var results: [Pokemon] // Decoding JSON's srray
 }                          // Debe mapearse con variables primitivas
 
-struct Pokemon {
+struct Pokemon: Codable {
     var name: String
     var url: String
 }
 
-struct Perfil {
+struct Perfil: Codable {
     var sprites: Sprite
 }
 
-struct Sprite {
+struct Sprite: Codable {
     var front_default: String
     var back_default: String
 }
@@ -29,5 +29,5 @@ struct Sprite {
 struct PokemonBase: Identifiable { // Protocolo para identificar celdas
     var id: Int                    // Requiere de una propiedad que las mantenga únicas
     var pokemon: Pokemon
-    var perfil: Perfil
+    var perfil: Perfil?
 }

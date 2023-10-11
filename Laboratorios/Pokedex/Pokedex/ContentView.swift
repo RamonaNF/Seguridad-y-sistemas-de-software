@@ -16,13 +16,36 @@ struct ContentView: View {
         //    .padding()
         List(pokemonList) { // Arreglo de datos sobre el que iterar
             pokemonBase in HStack { // Contenedor horizontal
-                WebImage(url: URL(string: pokemonBase.perfil.sprites.front_default))
+                WebImage(url: URL(string: pokemonBase.perfil?.sprites.front_default ?? ""))
                    .resizable() // Resizable like SwiftUI.Image, you must use this modifier or the view will use the image bitmap size
                    .scaledToFit()
                    .frame(width: 48, height: 48, alignment: .center)
                 Text(pokemonBase.pokemon.name)
             }
+        }.onAppear { // OJO: No soporta concurrencia (tareas de forma simultánea)
+            Task {
+                await getPokemonList()
+            }
         }
+    }
+    
+    func getPokemonList() async {
+        let pokemonRepository = PokemonRepository()
+        var tempPokemonList = [PokemonBase]()
+        
+        let result = await pokemonRepository.getPokemonList(limit: 20)
+        print("Pokedex count: \(result!.count)")
+        
+        for i in 0...result!.results.count-1 {
+            //let numberPokemon = Int(pokemon.url.split(separator: "/")[5])!
+            
+            let tempPerfil = await pokemonRepository.getPokemonInfo(numberPokemon: i+1)
+            let tempPokemon = PokemonBase(id: i+1, pokemon: result!.results[i], perfil: tempPerfil)
+            
+            tempPokemonList.append(tempPokemon)
+        }
+        
+        pokemonList = tempPokemonList
     }
 }
 
