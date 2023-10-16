@@ -10,6 +10,20 @@
 
 import Foundation
 
+//  PASO 1: Protocolo del servicio de API
+protocol PokemonAPIProtocol { //  Mapear API (conexiones, URLs necesarias) -> BAAS (backend as a service)
+    // POST: body de la petición HTTP (decodificado dentro del paquete)
+    // GET: query como parámetro
+    
+    // async func: porque el método podría tomar mucho tiempo en devolver la información
+    
+    // https://pokeapi.co/api/v2/pokemon?limit=1279 -> Query param: ?param1=val1&paramN=valN
+    func getPokemonList(limit: Int) async -> Pokedex? // ? Podría devolver null
+    
+    // https://pokeapi.co/api/v2/pokemon/11/ -> Query param: /numPokemon/
+    func getPokemonInfo(numberPokemon:Int) async -> Perfil?
+}
+
 // Rutas
 struct Api {
     static let base = "https://pokeapi.co/api/v2/" // URL base
@@ -20,7 +34,8 @@ struct Api {
 }
 
 class PokemonRepository: PokemonAPIProtocol { // Se hereda del protocolo
-    let nservice: NetworkAPIService // PASO 5: Uso del singleton
+    let nservice: NetworkAPIService
+    static let shared = PokemonRepository() // PASO 5: Uso del singleton
     
     // Para que en cada acceso al repo por default se use el singleton de nuestra API
     init(nservice: NetworkAPIService = NetworkAPIService.shared) { // Asigna parámetro por default
