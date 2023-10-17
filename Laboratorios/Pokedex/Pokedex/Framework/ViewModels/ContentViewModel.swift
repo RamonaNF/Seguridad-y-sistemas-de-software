@@ -20,9 +20,7 @@ class ContentViewModel: ObservableObject { // Emite cambios de sus valores
     
     @MainActor // Singleton del OS para que un método corra en el mainQueue
     func getPokemonList() async {
-        let pokemonRepository = PokemonRepository()
-        
-        let result = await pokemonRepository.getPokemonList(limit: 20)
+        let result = await pokemonListRequirement.getPokemonList(limit: 20)
         //print("Pokedex count: \(result!.count)")
         
         for i in 0...result!.results.count-1 {
