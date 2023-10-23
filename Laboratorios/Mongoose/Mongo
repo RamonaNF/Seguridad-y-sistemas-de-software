@@ -1,0 +1,82 @@
+
+
+MONGODB (mongosh)
+ https://www.youtube.com/watch?v=ofme2o29ngU
+
+> It adds a unique id for every record
+> No columns, but documents
+    Documents live in collections and collections in database
+> Whenever you try to use something,
+  if it doesn't exist it'll create
+
+
+show dbs
+
+use ___  -> Existing or new one
+show collections  -> Tables inside a db
+
+db  -> Current db
+db.dropDatabase()
+
+
+-> Since there are no schemas, you can add anything in a collection
+db.collectionName.insertOne({ attribName: "val", num: 11 })
+db.collectionName.insertOne({ we: { can: "have" }, diff: ["attr"] })
+
+db.collectionName.insertMany([{list: "of"}, {objects: ":)"}])
+
+
+db.collectionName.find()  -> See records
+   .skip(n)  -> Skip n records
+   .limit(n)  -> See n records
+   .sort({attrib: x})  -> x: 1|-1  asc|desc
+
+db.collectionName.findOne()
+db.collectionName.countDocuments()  -> Coincidences
+.find({param: {$eq: "complex", $nin[":P"]}, default: "see"},
+      {showAttr: 1, dont: 0})
+
+   attrName: {$eq: ":D"}  -> ==
+             {$ne: "D:"}  -> !=
+
+             {$gt: x}  -> > x
+             {$gte: x} -> >= x
+             {$lt: x}  -> < x
+             {$lte: x} -> <= x
+
+             {$in: ["lst", "of", "values"]}  -> in
+             {$nin: ["lst", "of", "values"]}  -> not in
+
+             {$keyExists: true}
+             {$keyExists: false}
+
+  $and | $or: [{atr: "val"}, {$comp: res}]
+
+  $not | $nor: {}
+
+  $expr: {$gt: ["$attr1.property", "$attr2"]}
+
+
+db.collectionName.updateMany({f: "b"}, $set: {t: "t"})
+db.collectionName.updateOne({filter: "blah"}, {$set: {to: "this"}})
+   {$inc: {attr: x}}  -> to add x units
+   {$rename: {attr: newName}}
+   {$unset: {attr: ""}}
+   {$push: {attr: "extraVal"}}  -> Add to an array
+   {$pull: {attr: "removeVal"}}  -> Remove from array
+
+
+-> Si no hay registros, crea uno con el nuevo objeto
+db.collectionName.replaceOne({f: "b"}, {new: "object"})
+
+
+db.collectionName.deleteOne({f: "b"})
+db.collectionName.deleteMany({f: "b"})
+
+
+
+
+
+MONGOOSE ()
+https://www.youtube.com/watch?v=DZBGEVgL2eE
+
