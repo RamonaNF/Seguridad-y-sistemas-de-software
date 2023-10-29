@@ -1,3 +1,7 @@
+
 *.jar
 *.pdf
+
 Laboratorios/Mongoose/node_modules
+User_stories/node_modules
+User_stories/Mongo_atlas_backup.txt
