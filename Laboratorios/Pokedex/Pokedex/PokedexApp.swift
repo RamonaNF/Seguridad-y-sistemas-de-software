@@ -22,7 +22,7 @@ struct PokedexApp: App {
                       // Window: No modo background (solo en macOS)
                       // Document Group: CRUD de documentos
                       // Settings: Abrir menú settings desde la app (solo en macOS)
-            ContentView()
+            CoordinatorView() 
             
         }.onChange(of: scenePhase) {
             
