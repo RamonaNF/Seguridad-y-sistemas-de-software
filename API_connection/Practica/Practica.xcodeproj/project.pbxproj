@@ -14,6 +14,14 @@
 		9D88D2EA2B0EE8FD00882CB0 /* PracticaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D88D2E92B0EE8FD00882CB0 /* PracticaTests.swift */; };
 		9D88D2F42B0EE8FD00882CB0 /* PracticaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D88D2F32B0EE8FD00882CB0 /* PracticaUITests.swift */; };
 		9D88D2F62B0EE8FE00882CB0 /* PracticaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D88D2F52B0EE8FE00882CB0 /* PracticaUITestsLaunchTests.swift */; };
+		9D88D30F2B0EF2E200882CB0 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D88D30E2B0EF2E200882CB0 /* ContentViewModel.swift */; };
+		9D88D3112B0EF31000882CB0 /* ContentRequirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D88D3102B0EF31000882CB0 /* ContentRequirement.swift */; };
+		9D88D3132B0EF33200882CB0 /* ContentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D88D3122B0EF33200882CB0 /* ContentRepository.swift */; };
+		9D88D3162B0EF38600882CB0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9D88D3152B0EF38600882CB0 /* Alamofire */; };
+		9D88D3192B0EF39A00882CB0 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9D88D3182B0EF39A00882CB0 /* SDWebImageSwiftUI */; };
+		9D88D31B2B0EF3CB00882CB0 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D88D31A2B0EF3CB00882CB0 /* Content.swift */; };
+		9D88D31D2B0EF3E500882CB0 /* NetworkAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D88D31C2B0EF3E500882CB0 /* NetworkAPIService.swift */; };
+		9D88D3202B0EF89800882CB0 /* MovieCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D88D31F2B0EF89700882CB0 /* MovieCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +52,12 @@
 		9D88D2EF2B0EE8FD00882CB0 /* PracticaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PracticaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D88D2F32B0EE8FD00882CB0 /* PracticaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticaUITests.swift; sourceTree = "<group>"; };
 		9D88D2F52B0EE8FE00882CB0 /* PracticaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9D88D30E2B0EF2E200882CB0 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		9D88D3102B0EF31000882CB0 /* ContentRequirement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRequirement.swift; sourceTree = "<group>"; };
+		9D88D3122B0EF33200882CB0 /* ContentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRepository.swift; sourceTree = "<group>"; };
+		9D88D31A2B0EF3CB00882CB0 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
+		9D88D31C2B0EF3E500882CB0 /* NetworkAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAPIService.swift; sourceTree = "<group>"; };
+		9D88D31F2B0EF89700882CB0 /* MovieCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D88D3192B0EF39A00882CB0 /* SDWebImageSwiftUI in Frameworks */,
+				9D88D3162B0EF38600882CB0 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,8 +110,10 @@
 		9D88D2D72B0EE8F500882CB0 /* Practica */ = {
 			isa = PBXGroup;
 			children = (
+				9D88D3092B0EF16000882CB0 /* Framework */,
+				9D88D3082B0EF15100882CB0 /* Domain */,
+				9D88D3062B0EF11700882CB0 /* Data */,
 				9D88D2D82B0EE8F500882CB0 /* PracticaApp.swift */,
-				9D88D2DA2B0EE8F500882CB0 /* ContentView.swift */,
 				9D88D2DC2B0EE8FD00882CB0 /* Assets.xcassets */,
 				9D88D2DE2B0EE8FD00882CB0 /* Preview Content */,
 			);
@@ -127,6 +145,74 @@
 			path = PracticaUITests;
 			sourceTree = "<group>";
 		};
+		9D88D3062B0EF11700882CB0 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9D88D30C2B0EF1D200882CB0 /* Models */,
+				9D88D3122B0EF33200882CB0 /* ContentRepository.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		9D88D3082B0EF15100882CB0 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				9D88D3102B0EF31000882CB0 /* ContentRequirement.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		9D88D3092B0EF16000882CB0 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				9D88D30B2B0EF1A200882CB0 /* Views */,
+				9D88D30A2B0EF17B00882CB0 /* ViewModels */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		9D88D30A2B0EF17B00882CB0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9D88D30E2B0EF2E200882CB0 /* ContentViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9D88D30B2B0EF1A200882CB0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9D88D31E2B0EF82400882CB0 /* Components */,
+				9D88D2DA2B0EE8F500882CB0 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9D88D30C2B0EF1D200882CB0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9D88D30D2B0EF1DF00882CB0 /* Network */,
+				9D88D31A2B0EF3CB00882CB0 /* Content.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9D88D30D2B0EF1DF00882CB0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9D88D31C2B0EF3E500882CB0 /* NetworkAPIService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9D88D31E2B0EF82400882CB0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				9D88D31F2B0EF89700882CB0 /* MovieCard.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +229,10 @@
 			dependencies = (
 			);
 			name = Practica;
+			packageProductDependencies = (
+				9D88D3152B0EF38600882CB0 /* Alamofire */,
+				9D88D3182B0EF39A00882CB0 /* SDWebImageSwiftUI */,
+			);
 			productName = Practica;
 			productReference = 9D88D2D52B0EE8F500882CB0 /* Practica.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +305,10 @@
 				Base,
 			);
 			mainGroup = 9D88D2CC2B0EE8F400882CB0;
+			packageReferences = (
+				9D88D3142B0EF38600882CB0 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				9D88D3172B0EF39A00882CB0 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 9D88D2D62B0EE8F500882CB0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +351,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D88D3132B0EF33200882CB0 /* ContentRepository.swift in Sources */,
 				9D88D2DB2B0EE8F500882CB0 /* ContentView.swift in Sources */,
 				9D88D2D92B0EE8F500882CB0 /* PracticaApp.swift in Sources */,
+				9D88D30F2B0EF2E200882CB0 /* ContentViewModel.swift in Sources */,
+				9D88D3202B0EF89800882CB0 /* MovieCard.swift in Sources */,
+				9D88D31D2B0EF3E500882CB0 /* NetworkAPIService.swift in Sources */,
+				9D88D3112B0EF31000882CB0 /* ContentRequirement.swift in Sources */,
+				9D88D31B2B0EF3CB00882CB0 /* Content.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,6 +685,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9D88D3142B0EF38600882CB0 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		9D88D3172B0EF39A00882CB0 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9D88D3152B0EF38600882CB0 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9D88D3142B0EF38600882CB0 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		9D88D3182B0EF39A00882CB0 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9D88D3172B0EF39A00882CB0 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9D88D2CD2B0EE8F500882CB0 /* Project object */;
 }
