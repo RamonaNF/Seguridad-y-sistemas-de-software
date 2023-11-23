@@ -21,7 +21,7 @@ class CourseListRequirement: CourseListRequirementProtocol {
     }
 
     func getCourseList(cost: Int) async -> ServerResponse<[Course]>? {
-        return await dataRepository.getCourseList(cost: cost)
+        return await dataRepository.getCourseList(/*cost: cost*/)
     }
     
     func getCourse(id: String) async -> ServerResponse<[Course]>? {

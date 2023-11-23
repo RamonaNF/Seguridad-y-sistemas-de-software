@@ -9,6 +9,24 @@
           "revision": "3dc6a42c7727c49bf26508e29b0a0b35f9c7e1ad",
           "version": null
         }
+      },
+      {
+        "package": "SDWebImage",
+        "repositoryURL": "https://github.com/SDWebImage/SDWebImage.git",
+        "state": {
+          "branch": null,
+          "revision": "fd1950de05a5ad77cb252fd88576c1e1809ee50d",
+          "version": "5.18.4"
+        }
+      },
+      {
+        "package": "SDWebImageSwiftUI",
+        "repositoryURL": "https://github.com/SDWebImage/SDWebImageSwiftUI",
+        "state": {
+          "branch": "master",
+          "revision": "e45f290a77a3c8c0bba4d8e027632d1bc378cef7",
+          "version": null
+        }
       }
     ]
   },

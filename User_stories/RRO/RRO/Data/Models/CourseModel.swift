@@ -12,8 +12,8 @@ struct Course: Codable, Identifiable { // Encoding y decoding | Para identificar
     var name: String
     var description: String
     var speaker: String
-    var startDate: Date
-    var endDate: Date
+    var startDate: String?
+    var endDate: String?
     var schedule: String
     var modality: String
     var postalCode: Int?
@@ -33,8 +33,17 @@ struct Course: Codable, Identifiable { // Encoding y decoding | Para identificar
     }
 }
 
-/*struct CourseResponse: Codable {
+struct Rating: Codable {
+    var id: String
+    var rating: Int
+    
+    enum CodingKeys: String, CodingKey {
+        case id, rating
+    }
+}
+
+/*struct CourseResponse<T: Codable>: Codable {
     var status: String
     var results: Int?
-    var data: [Course]?
+    var data: [Course]
 }*/

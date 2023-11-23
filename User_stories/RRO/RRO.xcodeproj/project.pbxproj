@@ -20,6 +20,13 @@
 		9D08C5612AF08A1100147EB5 /* CourseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D08C5602AF08A1100147EB5 /* CourseRepository.swift */; };
 		9D08C5632AF08B3100147EB5 /* RROAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D08C5622AF08B3100147EB5 /* RROAPI.swift */; };
 		9D08C5652AF08C5A00147EB5 /* ServerResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D08C5642AF08C5A00147EB5 /* ServerResponseModel.swift */; };
+		9D6CAE3A2B04685D008B9DD5 /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CAE392B04685D008B9DD5 /* RequestInterceptor.swift */; };
+		9D6CAE3D2B046ABD008B9DD5 /* MyCoursesListRequirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CAE3C2B046ABD008B9DD5 /* MyCoursesListRequirement.swift */; };
+		9D6CAE402B046B22008B9DD5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CAE3F2B046B22008B9DD5 /* ProfileView.swift */; };
+		9D6CAE432B046B86008B9DD5 /* MyCoursesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CAE422B046B86008B9DD5 /* MyCoursesViewModel.swift */; };
+		9D6CAE462B046C9F008B9DD5 /* CourseInfoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CAE452B046C9F008B9DD5 /* CourseInfoCardView.swift */; };
+		9D6CAE492B046CE9008B9DD5 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9D6CAE482B046CE9008B9DD5 /* SDWebImageSwiftUI */; };
+		9D6CAE4D2B046E1C008B9DD5 /* CourseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CAE4C2B046E1C008B9DD5 /* CourseDetailView.swift */; };
 		9D9B189C2AF1572A0083F06F /* CourseListRequirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9B189B2AF1572A0083F06F /* CourseListRequirement.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +63,12 @@
 		9D08C5602AF08A1100147EB5 /* CourseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseRepository.swift; sourceTree = "<group>"; };
 		9D08C5622AF08B3100147EB5 /* RROAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RROAPI.swift; sourceTree = "<group>"; };
 		9D08C5642AF08C5A00147EB5 /* ServerResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerResponseModel.swift; sourceTree = "<group>"; };
+		9D6CAE392B04685D008B9DD5 /* RequestInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestInterceptor.swift; sourceTree = "<group>"; };
+		9D6CAE3C2B046ABD008B9DD5 /* MyCoursesListRequirement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCoursesListRequirement.swift; sourceTree = "<group>"; };
+		9D6CAE3F2B046B22008B9DD5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		9D6CAE422B046B86008B9DD5 /* MyCoursesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCoursesViewModel.swift; sourceTree = "<group>"; };
+		9D6CAE452B046C9F008B9DD5 /* CourseInfoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseInfoCardView.swift; sourceTree = "<group>"; };
+		9D6CAE4C2B046E1C008B9DD5 /* CourseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailView.swift; sourceTree = "<group>"; };
 		9D9B189B2AF1572A0083F06F /* CourseListRequirement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListRequirement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D6CAE492B046CE9008B9DD5 /* SDWebImageSwiftUI in Frameworks */,
 				9D08C55F2AF0894C00147EB5 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				9D9B189B2AF1572A0083F06F /* CourseListRequirement.swift */,
+				9D6CAE3C2B046ABD008B9DD5 /* MyCoursesListRequirement.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -164,6 +179,8 @@
 		9D08C5542AF081CF00147EB5 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				9D6CAE442B046C85008B9DD5 /* Views */,
+				9D6CAE412B046B71008B9DD5 /* ViewModels */,
 				9D08C52A2AF0811800147EB5 /* ContentView.swift */,
 			);
 			path = Framework;
@@ -199,8 +216,51 @@
 			isa = PBXGroup;
 			children = (
 				9D08C55B2AF0884600147EB5 /* NetworkAPIService.swift */,
+				9D6CAE392B04685D008B9DD5 /* RequestInterceptor.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		9D6CAE3E2B046B07008B9DD5 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				9D6CAE4B2B046DFB008B9DD5 /* Details */,
+				9D6CAE3F2B046B22008B9DD5 /* ProfileView.swift */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		9D6CAE412B046B71008B9DD5 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9D6CAE422B046B86008B9DD5 /* MyCoursesViewModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		9D6CAE442B046C85008B9DD5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9D6CAE4A2B046DB7008B9DD5 /* Components */,
+				9D6CAE3E2B046B07008B9DD5 /* Menu */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		9D6CAE4A2B046DB7008B9DD5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				9D6CAE452B046C9F008B9DD5 /* CourseInfoCardView.swift */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		9D6CAE4B2B046DFB008B9DD5 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				9D6CAE4C2B046E1C008B9DD5 /* CourseDetailView.swift */,
+			);
+			name = Details;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +281,7 @@
 			name = RRO;
 			packageProductDependencies = (
 				9D08C55E2AF0894C00147EB5 /* Alamofire */,
+				9D6CAE482B046CE9008B9DD5 /* SDWebImageSwiftUI */,
 			);
 			productName = RRO;
 			productReference = 9D08C5252AF0811800147EB5 /* RRO.app */;
@@ -296,6 +357,7 @@
 			mainGroup = 9D08C51C2AF0811800147EB5;
 			packageReferences = (
 				9D08C55D2AF0894C00147EB5 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				9D6CAE472B046CE9008B9DD5 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = 9D08C5262AF0811800147EB5 /* Products */;
 			projectDirPath = "";
@@ -340,12 +402,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D08C5632AF08B3100147EB5 /* RROAPI.swift in Sources */,
+				9D6CAE432B046B86008B9DD5 /* MyCoursesViewModel.swift in Sources */,
+				9D6CAE3A2B04685D008B9DD5 /* RequestInterceptor.swift in Sources */,
+				9D6CAE462B046C9F008B9DD5 /* CourseInfoCardView.swift in Sources */,
+				9D6CAE4D2B046E1C008B9DD5 /* CourseDetailView.swift in Sources */,
 				9D08C5592AF0825A00147EB5 /* CourseModel.swift in Sources */,
 				9D08C52B2AF0811800147EB5 /* ContentView.swift in Sources */,
 				9D08C5292AF0811800147EB5 /* RROApp.swift in Sources */,
 				9D9B189C2AF1572A0083F06F /* CourseListRequirement.swift in Sources */,
 				9D08C5652AF08C5A00147EB5 /* ServerResponseModel.swift in Sources */,
 				9D08C5612AF08A1100147EB5 /* CourseRepository.swift in Sources */,
+				9D6CAE3D2B046ABD008B9DD5 /* MyCoursesListRequirement.swift in Sources */,
+				9D6CAE402B046B22008B9DD5 /* ProfileView.swift in Sources */,
 				9D08C55C2AF0884600147EB5 /* NetworkAPIService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -683,6 +751,14 @@
 				kind = branch;
 			};
 		};
+		9D6CAE472B046CE9008B9DD5 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -690,6 +766,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9D08C55D2AF0894C00147EB5 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		9D6CAE482B046CE9008B9DD5 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9D6CAE472B046CE9008B9DD5 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
