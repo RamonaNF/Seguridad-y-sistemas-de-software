@@ -28,6 +28,16 @@
 		9D6CAE492B046CE9008B9DD5 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9D6CAE482B046CE9008B9DD5 /* SDWebImageSwiftUI */; };
 		9D6CAE4D2B046E1C008B9DD5 /* CourseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CAE4C2B046E1C008B9DD5 /* CourseDetailView.swift */; };
 		9D9B189C2AF1572A0083F06F /* CourseListRequirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9B189B2AF1572A0083F06F /* CourseListRequirement.swift */; };
+		9DB442B82B1053C200AEC6F0 /* PublicationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB442B72B1053C200AEC6F0 /* PublicationModel.swift */; };
+		9DB442BA2B10545A00AEC6F0 /* PublicationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB442B92B10545A00AEC6F0 /* PublicationRepository.swift */; };
+		9DB442BC2B1054AA00AEC6F0 /* PublicationListRequirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB442BB2B1054AA00AEC6F0 /* PublicationListRequirement.swift */; };
+		9DB442BE2B1054DD00AEC6F0 /* PublicationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB442BD2B1054DD00AEC6F0 /* PublicationViewModel.swift */; };
+		9DB442C02B10551D00AEC6F0 /* PublicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB442BF2B10551D00AEC6F0 /* PublicationView.swift */; };
+		9DB442C22B10556E00AEC6F0 /* PublicationCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB442C12B10556E00AEC6F0 /* PublicationCardView.swift */; };
+		9DB442C42B1055E500AEC6F0 /* ExpandableText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB442C32B1055E500AEC6F0 /* ExpandableText.swift */; };
+		9DB442C62B10599A00AEC6F0 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB442C52B10599A00AEC6F0 /* CommentView.swift */; };
+		9DB442CB2B10F1E300AEC6F0 /* FlowStacks in Frameworks */ = {isa = PBXBuildFile; productRef = 9DB442CA2B10F1E300AEC6F0 /* FlowStacks */; };
+		9DB442CD2B114C7E00AEC6F0 /* CommentCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB442CC2B114C7D00AEC6F0 /* CommentCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +80,15 @@
 		9D6CAE452B046C9F008B9DD5 /* CourseInfoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseInfoCardView.swift; sourceTree = "<group>"; };
 		9D6CAE4C2B046E1C008B9DD5 /* CourseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailView.swift; sourceTree = "<group>"; };
 		9D9B189B2AF1572A0083F06F /* CourseListRequirement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListRequirement.swift; sourceTree = "<group>"; };
+		9DB442B72B1053C200AEC6F0 /* PublicationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicationModel.swift; sourceTree = "<group>"; };
+		9DB442B92B10545A00AEC6F0 /* PublicationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicationRepository.swift; sourceTree = "<group>"; };
+		9DB442BB2B1054AA00AEC6F0 /* PublicationListRequirement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicationListRequirement.swift; sourceTree = "<group>"; };
+		9DB442BD2B1054DD00AEC6F0 /* PublicationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicationViewModel.swift; sourceTree = "<group>"; };
+		9DB442BF2B10551D00AEC6F0 /* PublicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicationView.swift; sourceTree = "<group>"; };
+		9DB442C12B10556E00AEC6F0 /* PublicationCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicationCardView.swift; sourceTree = "<group>"; };
+		9DB442C32B1055E500AEC6F0 /* ExpandableText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableText.swift; sourceTree = "<group>"; };
+		9DB442C52B10599A00AEC6F0 /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
+		9DB442CC2B114C7D00AEC6F0 /* CommentCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +98,7 @@
 			files = (
 				9D6CAE492B046CE9008B9DD5 /* SDWebImageSwiftUI in Frameworks */,
 				9D08C55F2AF0894C00147EB5 /* Alamofire in Frameworks */,
+				9DB442CB2B10F1E300AEC6F0 /* FlowStacks in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +192,7 @@
 			children = (
 				9D9B189B2AF1572A0083F06F /* CourseListRequirement.swift */,
 				9D6CAE3C2B046ABD008B9DD5 /* MyCoursesListRequirement.swift */,
+				9DB442BB2B1054AA00AEC6F0 /* PublicationListRequirement.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -199,6 +220,7 @@
 			children = (
 				9D08C5582AF0825A00147EB5 /* CourseModel.swift */,
 				9D08C5642AF08C5A00147EB5 /* ServerResponseModel.swift */,
+				9DB442B72B1053C200AEC6F0 /* PublicationModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -208,6 +230,7 @@
 			children = (
 				9D08C5602AF08A1100147EB5 /* CourseRepository.swift */,
 				9D08C5622AF08B3100147EB5 /* RROAPI.swift */,
+				9DB442B92B10545A00AEC6F0 /* PublicationRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -226,6 +249,8 @@
 			children = (
 				9D6CAE4B2B046DFB008B9DD5 /* Details */,
 				9D6CAE3F2B046B22008B9DD5 /* ProfileView.swift */,
+				9DB442BF2B10551D00AEC6F0 /* PublicationView.swift */,
+				9DB442C52B10599A00AEC6F0 /* CommentView.swift */,
 			);
 			name = Menu;
 			sourceTree = "<group>";
@@ -234,6 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				9D6CAE422B046B86008B9DD5 /* MyCoursesViewModel.swift */,
+				9DB442BD2B1054DD00AEC6F0 /* PublicationViewModel.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -251,6 +277,9 @@
 			isa = PBXGroup;
 			children = (
 				9D6CAE452B046C9F008B9DD5 /* CourseInfoCardView.swift */,
+				9DB442C12B10556E00AEC6F0 /* PublicationCardView.swift */,
+				9DB442C32B1055E500AEC6F0 /* ExpandableText.swift */,
+				9DB442CC2B114C7D00AEC6F0 /* CommentCardView.swift */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -282,6 +311,7 @@
 			packageProductDependencies = (
 				9D08C55E2AF0894C00147EB5 /* Alamofire */,
 				9D6CAE482B046CE9008B9DD5 /* SDWebImageSwiftUI */,
+				9DB442CA2B10F1E300AEC6F0 /* FlowStacks */,
 			);
 			productName = RRO;
 			productReference = 9D08C5252AF0811800147EB5 /* RRO.app */;
@@ -358,6 +388,7 @@
 			packageReferences = (
 				9D08C55D2AF0894C00147EB5 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				9D6CAE472B046CE9008B9DD5 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				9DB442C92B10F1E300AEC6F0 /* XCRemoteSwiftPackageReference "FlowStacks" */,
 			);
 			productRefGroup = 9D08C5262AF0811800147EB5 /* Products */;
 			projectDirPath = "";
@@ -401,7 +432,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DB442BA2B10545A00AEC6F0 /* PublicationRepository.swift in Sources */,
 				9D08C5632AF08B3100147EB5 /* RROAPI.swift in Sources */,
+				9DB442C42B1055E500AEC6F0 /* ExpandableText.swift in Sources */,
 				9D6CAE432B046B86008B9DD5 /* MyCoursesViewModel.swift in Sources */,
 				9D6CAE3A2B04685D008B9DD5 /* RequestInterceptor.swift in Sources */,
 				9D6CAE462B046C9F008B9DD5 /* CourseInfoCardView.swift in Sources */,
@@ -411,10 +444,17 @@
 				9D08C5292AF0811800147EB5 /* RROApp.swift in Sources */,
 				9D9B189C2AF1572A0083F06F /* CourseListRequirement.swift in Sources */,
 				9D08C5652AF08C5A00147EB5 /* ServerResponseModel.swift in Sources */,
+				9DB442B82B1053C200AEC6F0 /* PublicationModel.swift in Sources */,
 				9D08C5612AF08A1100147EB5 /* CourseRepository.swift in Sources */,
+				9DB442C02B10551D00AEC6F0 /* PublicationView.swift in Sources */,
 				9D6CAE3D2B046ABD008B9DD5 /* MyCoursesListRequirement.swift in Sources */,
 				9D6CAE402B046B22008B9DD5 /* ProfileView.swift in Sources */,
+				9DB442BE2B1054DD00AEC6F0 /* PublicationViewModel.swift in Sources */,
 				9D08C55C2AF0884600147EB5 /* NetworkAPIService.swift in Sources */,
+				9DB442BC2B1054AA00AEC6F0 /* PublicationListRequirement.swift in Sources */,
+				9DB442C62B10599A00AEC6F0 /* CommentView.swift in Sources */,
+				9DB442CD2B114C7E00AEC6F0 /* CommentCardView.swift in Sources */,
+				9DB442C22B10556E00AEC6F0 /* PublicationCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -759,6 +799,14 @@
 				kind = branch;
 			};
 		};
+		9DB442C92B10F1E300AEC6F0 /* XCRemoteSwiftPackageReference "FlowStacks" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/johnpatrickmorgan/FlowStacks";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -771,6 +819,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9D6CAE472B046CE9008B9DD5 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
 			productName = SDWebImageSwiftUI;
+		};
+		9DB442CA2B10F1E300AEC6F0 /* FlowStacks */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9DB442C92B10F1E300AEC6F0 /* XCRemoteSwiftPackageReference "FlowStacks" */;
+			productName = FlowStacks;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

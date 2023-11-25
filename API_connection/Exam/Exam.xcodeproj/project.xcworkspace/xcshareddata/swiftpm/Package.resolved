@@ -5,18 +5,9 @@
         "package": "Alamofire",
         "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
         "state": {
-          "branch": "master",
+          "branch": null,
           "revision": "3dc6a42c7727c49bf26508e29b0a0b35f9c7e1ad",
-          "version": null
-        }
-      },
-      {
-        "package": "FlowStacks",
-        "repositoryURL": "https://github.com/johnpatrickmorgan/FlowStacks",
-        "state": {
-          "branch": "main",
-          "revision": "de75dc24e082da6cbe23d11b9838d7ca2f619910",
-          "version": null
+          "version": "5.8.1"
         }
       },
       {
@@ -24,8 +15,8 @@
         "repositoryURL": "https://github.com/SDWebImage/SDWebImage.git",
         "state": {
           "branch": null,
-          "revision": "fd1950de05a5ad77cb252fd88576c1e1809ee50d",
-          "version": "5.18.4"
+          "revision": "1b9a2e902cbde5fdf362faa0f4fd76ea74d74305",
+          "version": "5.18.5"
         }
       },
       {

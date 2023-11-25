@@ -11,7 +11,7 @@ import SwiftUI
 struct RROApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PublicationView()
         }
     }
 }

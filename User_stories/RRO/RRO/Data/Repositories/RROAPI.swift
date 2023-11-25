@@ -29,6 +29,8 @@ struct API {
         
         static let myCourses = "/user/mycourses"
         static let courseRating = "/course/updateRating"
+        
+        static let publication = "/publication"
     }
 }
 
@@ -41,4 +43,9 @@ protocol CourseAPIProtocol {
     func getMyCourses() async -> ServerResponse<[Course]>?
     // https://{API_DOMAIN}/v1/course/updateRating
     func updateCourseRating(model: Rating) async -> ServerResponse<[Course]>?
+}
+
+protocol PublicationAPIProtocol {
+    //https://{API_DOMAIN}/v1/publication
+    func getPublicationList() async -> ServerResponse<[Publication]>?
 }
